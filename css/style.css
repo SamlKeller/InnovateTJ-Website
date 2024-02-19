@@ -1,0 +1,381 @@
+@media only screen and (max-width: 1045px) {
+    #heroContent {
+        margin-top: 100px !important;
+    }
+    
+    #sponsorBlock {
+        width: 90% !important;
+    }
+
+    #content {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    #topSubBar {
+        width: 100% !important;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    .nomobile {
+        display: none !important;
+    }
+    #aboutTitle {
+        margin: 12% auto 0px 8% !important;
+        width: 90%;
+        font-size: 42px !important;
+    }
+
+    .topBarLink {
+        padding: 0px !important;
+    }
+    #spacer {
+        display: none !important;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#topBar {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    background-color: black;
+}
+
+#topSubBar {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+#spacer {
+    padding-left: 48px;
+}
+
+.topBarLink {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    padding: 12px 24px 12px 24px;
+    transition-duration: 0.2s;
+    border-radius: 18px;
+}
+
+.topBarLink:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    outline: 1px solid white;
+}
+
+#heroContent {
+    margin: 36px auto auto auto;
+    width: 80%;
+    height: 100%;
+}
+
+#title {
+    font-size: calc(18px + 3.2vw);
+    color: white;
+    text-align: center !important;
+    font-family: oscan !important;
+}
+
+#googleFormLinkButton {
+    margin: 12px auto auto auto;
+    text-decoration: none;
+    color: white;
+    outline: 1px solid white;
+    padding: 16px;
+    text-align: center;
+    border-radius: 18px;
+    width: 200px;
+    font-family: 'DM Sans', sans-serif;
+    transition-duration: 0.2s;
+}
+
+#googleFormLinkButton:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+#subtitle {
+    color: white;
+    padding-top: 12px;
+}
+
+#titleCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10% auto auto auto;
+}
+
+@font-face {
+    font-family: oscan;
+    src: url(../fonts/Oscan-Expanded.ttf);
+}
+  
+@font-face {
+    font-family: downey;
+    src: url(../fonts/Downey-Black.ttf);
+}
+
+#topLogo {
+    padding-left: 12px;
+    height: 75x;
+    width: 75px;
+}
+
+#backgroundVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(15%);
+}
+
+#sponsorBlock {
+    margin: 125px auto auto auto;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: center;
+}
+
+.sponsor {
+    margin: auto;
+    width: 200px;
+    object-fit: contain;
+    filter: brightness(0%) invert(100%);
+}
+
+.cooley {
+    filter: brightness(100%) invert(100%) !important;
+}
+
+#stickerMule {
+    height: 110px;
+}
+
+#aboutTitle {
+    margin: 6% auto auto 8%;
+    font-size: 48px;
+    text-align: left;
+    font-family: downey;
+}
+
+#content {
+    width: 60%;
+    margin: 48px auto auto 8%;
+    text-align: left;
+    padding-bottom: 96px;
+    flex: 1 0 auto;
+}
+
+#footer {
+    width: 100%;
+    padding: 18px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: black;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.socialLogo {
+    height: 25px;
+    margin: auto;
+}
+
+#leftText {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+
+#socialBlock {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#aboutSpacer {
+    height: 274px;
+}
+
+:root {
+    --no-of-slides: 8;
+    --slides-in-view: 4;
+    --slide-width: 200px;
+    --slide-height: 100px;
+    --iteration-time: 20s;
+}
+  
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(var(--slide-width) * var(--no-of-slides)* -1));
+    }
+}
+
+.carousel__wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel__slide {
+    animation: scroll var(--iteration-time) linear infinite;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    justify-content: center;
+    width: var(--slide-width);
+    height: var(--slide-height);
+    box-sizing: border-box;
+}
+
+.carousel__slide img {
+    width: 150px;
+}
+
+.imageSub {
+    margin: auto;
+    width: 60%;
+}
+
+#highSchoolFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.highSchoolImage {
+    height: 150px;
+    padding: 12px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+}
+
+.sam {
+    text-decoration: none;
+    color: white;
+}
+
+.sam:hover {
+    text-decoration: underline;
+}
+
+.teamMember {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 21%;
+    margin: 48px 12px 12px 12px;
+}
+
+.teamImg {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 12px;
+}
+
+.title {
+    text-align: center;
+    margin: auto;
+}
+
+#teamCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto !important;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#teamContent {
+    width: 80%;
+    margin: 48px auto auto 8%;
+    text-align: left;
+    padding-bottom: 96px;
+    flex: 1 0 auto;
+}
+
+.sponsorImg {
+    width: 200px;
+    margin: auto;
+    padding: 24px;
+}
+
+.tierFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.tierTitle {
+    text-transform: uppercase;
+    color: rgb(158, 158, 158);
+    font-size: 0.9rem;
+    width: 82%;
+    margin: 24px auto 12px auto;
+    text-align: left;
+    font-weight: bold;
+}
+
+#mapwrap {
+    width: 80%;
+    margin: 24px auto auto auto;
+}
+
+#bottomSpacer {
+    height: 150px;
+}
+
+#location {
+    font-weight: bold;
+    margin: 12px auto 0px auto !important;
+}
+
+#locationsub {
+    margin: 0px auto 24px auto !important;
+}
