@@ -379,3 +379,7 @@ table {
 #locationsub {
     margin: 0px auto 24px auto !important;
 }
+
+#scheduleSpacer {
+    height: 200px;
+}
