@@ -337,6 +337,14 @@ table {
     flex: 1 0 auto;
 }
 
+#sponsorContent {
+    width: 80%;
+    margin: 12px auto auto 8%;
+    text-align: left;
+    padding-bottom: 96px;
+    flex: 1 0 auto;
+}
+
 .sponsorImg {
     width: 200px;
     margin: auto;
@@ -380,6 +388,6 @@ table {
     margin: 0px auto 24px auto !important;
 }
 
-#scheduleSpacer {
-    height: 200px;
+#donationLink {
+    margin-bottom: 64px;
 }
