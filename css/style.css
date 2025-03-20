@@ -337,6 +337,10 @@ table {
     flex: 1 0 auto;
 }
 
+.teamMember {
+    flex: 0 0 25%;
+}
+
 #sponsorContent {
     width: 80%;
     margin: 12px auto auto 8%;
