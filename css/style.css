@@ -224,7 +224,7 @@ body {
 }
 
 :root {
-    --no-of-slides: 6;
+    --no-of-slides: 5;
     --slides-in-view: 4;
     --slide-width: 200px;
     --slide-height: 100px;
